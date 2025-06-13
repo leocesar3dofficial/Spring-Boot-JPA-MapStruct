@@ -1,0 +1,223 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1749532735870
+  modified: 1749532735870
+  description: ""
+collection:
+  - url: http://localhost:8080/api/operation-types
+    name: create operation types
+    meta:
+      id: req_95ca49ba754d4e50836671a0ce9eba1d
+      created: 1749532770461
+      modified: 1749783289085
+      isPrivate: false
+      description: ""
+      sortKey: -1749699627202
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "TEST"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/categories
+    name: create categories
+    meta:
+      id: req_56e39c7217bd445684bb1764387caa43
+      created: 1749533071704
+      modified: 1749783298880
+      isPrivate: false
+      description: ""
+      sortKey: -1749533431466
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "name": "Education",
+          "description": "Test Expenses for books and courses",
+          "operationTypeId": 1
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/categories
+    name: list categories
+    meta:
+      id: req_824875e8de924102bde31159b52d2c33
+      created: 1749533247779
+      modified: 1749783729602
+      isPrivate: false
+      description: ""
+      sortKey: -1749533247779
+    method: GET
+    parameters:
+      - id: pair_88353ec503154a518eee87fd6a47f51a
+        name: ""
+        value: ""
+        description: ""
+        disabled: true
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/operations
+    name: create operations
+    meta:
+      id: req_3f202315cbf748e4a564234436ed323c
+      created: 1749533341726
+      modified: 1749783295741
+      isPrivate: false
+      description: ""
+      sortKey: -1749616621127.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "categoryId": 2,
+          "description": "Salary",
+          "value": 3500.50
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/operations
+    name: list operations
+    meta:
+      id: req_f46bd619ad8b432f8e1facbd50ddcb03
+      created: 1749533615153
+      modified: 1749783713478
+      isPrivate: false
+      description: ""
+      sortKey: -1749533615153
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/operation-types
+    name: list operations types
+    meta:
+      id: req_401b354ba42e4807a8f2600291424823
+      created: 1749699627102
+      modified: 1749783390872
+      isPrivate: false
+      description: ""
+      sortKey: -1749699627102
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/operations/1
+    name: delete operations
+    meta:
+      id: req_9d45a06ed06a424c800bf436b6fb1462
+      created: 1749783401865
+      modified: 1749783711601
+      isPrivate: false
+      description: ""
+      sortKey: -1749533523309.5
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/categories/1
+    name: delete categories
+    meta:
+      id: req_8033a334810441b7815ee03414fad1d0
+      created: 1749783506855
+      modified: 1749783722802
+      isPrivate: false
+      description: ""
+      sortKey: -1749533247679
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1749532761002
+    modified: 1749532761002
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1749532760987
+    modified: 1749532760987
+    isPrivate: false
